@@ -1,0 +1,46 @@
+{
+  "id": "aec43bdb-3df0-431e-8fb2-513623b7205c",
+  "name": "ALProject1（ExtentAPI）",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+  {
+    "id": "cc0c39b8-12e2-4f80-85f4-af47e86d5f7c",
+    "name": "Base Application",
+    "publisher": "Microsoft",
+    "version": "24.0.0.0"
+  },
+  {
+    "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+    "name": "Application",
+    "publisher": "Microsoft",
+    "version": "24.0.0.0"
+  }
+]
+
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

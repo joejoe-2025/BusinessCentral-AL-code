@@ -1,0 +1,29 @@
+page 50170 "Web Order Staging API"
+{
+    PageType = API;
+    SourceTable = "Web Order Staging";
+    APIPublisher = 'bigals';
+    APIGroup = 'web';
+    APIVersion = 'v1.0';
+    EntityName = 'webOrder';
+    EntitySetName = 'webOrders';
+    Caption = 'CWeb Order Staging API';
+    DelayedInsert = true;
+
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field("ID"; "ID") { }
+                field("Customer No."; "Customer No.") { }
+                field("Order Date"; "Order Date") { }
+                field("Item No."; "Item No.") { }
+                field("Quantity"; "Quantity") { }
+                field("Status"; "Status") { }
+            }
+        }
+    }
+}
