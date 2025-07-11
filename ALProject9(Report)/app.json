@@ -1,0 +1,35 @@
+{
+  "id": "e989386a-1fc5-4f87-9551-ef70a328f4ff",
+  "name": "ALProject9(Report)",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 90333
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": false,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": false,
+    "applyToDevExtension": false
+  },
+  "runtime": "14.0",
+  "features": [
+    "NoImplicitWith",
+    "IncludeExcelLayouts"
+
+  ]
+}

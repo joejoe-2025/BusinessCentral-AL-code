@@ -1,0 +1,32 @@
+{
+  "id": "a3f9d436-94d3-4256-986b-e451dbb2d7f5",
+  "name": "ALProject4(SalesOrderLInesAPI)",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "26.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 90149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
