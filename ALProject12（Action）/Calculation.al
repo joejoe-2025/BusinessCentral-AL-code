@@ -34,7 +34,7 @@ page 54476 CalculationPage
 
     actions
     {
-        area(Reporting)
+        area(Processing)
         {
             action(Add)
             {
@@ -124,7 +124,7 @@ page 54476 CalculationPage
 
         area(Creation)
         {
-            action("New document")
+            action("New Customer")
             {
                 ApplicationArea = All;
                 RunObject = page "Customer card";
