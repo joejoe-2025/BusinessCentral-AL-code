@@ -18,6 +18,6 @@ pageextension 50664 MyItemCardExt extends "Item Card"
 
     local procedure CalcInventoryValue(): Decimal
     begin
-        exit(Rec.Inventory * Rec."Unit Cost");
+        exit(Rec.Inventory * Rec."Unit Price");
     end;
 }

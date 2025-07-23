@@ -13,9 +13,7 @@ pageextension 50100 ItemCardExt_CustomFields extends "Item Card"
             field("SubCategory"; rec."SubCategory") { ApplicationArea = All; }
             field("Parent Item"; Rec."Parent Item")
             {
-
                 ApplicationArea = All;
-
             }
             field("Brand"; rec."Brand") { ApplicationArea = All; }
 
