@@ -1,10 +1,10 @@
 page 50120 ItemListPart
 {
-    PageType = ListPart;
+    PageType = List;
     SourceTable = Item;
     ApplicationArea = All;
     UsageCategory = Administration;
-    Caption = 'Top Items';
+    Caption = 'Our Big Al''s Items';
 
     layout
     {

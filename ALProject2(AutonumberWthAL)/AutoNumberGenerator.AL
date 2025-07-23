@@ -1,3 +1,6 @@
+//This code is used to generate an Autonumber base on the Company Name and Year, Example：ABC202500000001
+
+
 codeunit 50152 AutoNumberInsertHandler
 {
     [EventSubscriber(ObjectType::Table, Database::Customer, 'OnBeforeValidateEvent', 'Company Code', false, false)]
