@@ -7,21 +7,17 @@ table 50145 "Customer Order"
         field(1; "Order Number"; Code[20])
         {
             Caption = 'Order Number';
-
         }
 
-        field(2; "Customer Name"; text[100])
+        field(2; "Customer Name"; Text[100])
         {
             Caption = 'Customer Name';
-
-
         }
 
         field(3; "Order Series"; Code[20])
         {
             Caption = 'Order Series';
             TableRelation = "No. Series";
-
         }
     }
 
@@ -33,19 +29,16 @@ table 50145 "Customer Order"
         }
     }
 
-
     procedure AssistEdit(): Boolean
     var
         NoSeriesMgt: Codeunit "No. Series";
     begin
         if "Order Number" = '' then begin
-            //////TestField("Order Series");
+            TestField("Order Series");
             "Order Number" := NoSeriesMgt.GetNextNo("Order Series", WorkDate(), true);
             exit(true);
         end;
-
-
-
+        exit(false);
     end;
 
     trigger OnInsert()
@@ -55,12 +48,6 @@ table 50145 "Customer Order"
         if "Order Number" = '' then begin
             TestField("Order Series");
             "Order Number" := NoSeriesMgt.GetNextNo("Order Series", WorkDate(), true);
-
-
         end;
-
     end;
-
-
-
 }

@@ -1,15 +1,16 @@
-page 50145 "Customer Order Card"
+page 50145 "Customer Order List"
 {
-    PageType = Card;
+    PageType = List;
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Customer Order";
+    Caption = 'Customer Order List';
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(Group)
             {
                 field("Order Number"; Rec."Order Number")
                 {
@@ -19,12 +20,10 @@ page 50145 "Customer Order Card"
                 field("Customer Name"; Rec."Customer Name")
                 {
                     ApplicationArea = All;
-                    Editable = true;
                 }
                 field("Order Series"; Rec."Order Series")
                 {
                     ApplicationArea = All;
-                    Editable = true;
                 }
             }
         }
@@ -38,21 +37,27 @@ page 50145 "Customer Order Card"
             {
                 Caption = 'New Order';
                 ApplicationArea = All;
+
                 trigger OnAction()
+                var
+                    NewOrder: Record "Customer Order";
                 begin
-                    Rec.Init();
-                    Rec.Insert(true);
-                    CurrPage.Update(false);
+                    NewOrder.Init();
+                    NewOrder."Order Series" := 'ORDER'; // 替换成你已有的编号系列代码
+                    NewOrder.Insert(true); // 触发表的 OnInsert，自动生成编号
+                    CurrPage.Update(false); // 刷新页面
+                    Message('New Order Created: %1', NewOrder."Order Number");
                 end;
             }
 
             action(GenerateNumber)
             {
-                ApplicationArea = All;
                 Caption = 'Generate Order Number';
+                ApplicationArea = All;
                 Image = NumberSetup;
                 Promoted = true;
                 PromotedCategory = Process;
+
                 trigger OnAction()
                 begin
                     GenerateOrderNumber();
@@ -67,25 +72,18 @@ page 50145 "Customer Order Card"
         OrderNo: Code[20];
     begin
         if Rec."Order Series" = '' then
-            Error('Please Select the order series First');
+            Error('Please select the order series first.');
 
         if Rec."Order Number" <> '' then
             if not Confirm('An order number already exists. Do you want to generate a new one?', false) then
                 exit;
 
         OrderNo := NoSeriesMgt.GetNextNo(Rec."Order Series", WorkDate(), true);
-        if Rec.Get(rec."Order Number") then begin
-            Rec."Order Number" := OrderNo;
-            Rec.Modify(true);
 
-        end else begin
-            rec.Init();
-            Rec."Order Number" := OrderNo;
-            Rec.Insert(true);
-        end;
+        Rec."Order Number" := OrderNo;
+        Rec.Modify(true);
 
-
-        Message('New Order Number Generated : %1', Rec."Order Number");
         CurrPage.Update(false);
+        Message('New Order Number Generated: %1', OrderNo);
     end;
 }
