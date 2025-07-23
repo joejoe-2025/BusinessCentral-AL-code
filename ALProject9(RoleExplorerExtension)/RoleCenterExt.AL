@@ -1,3 +1,4 @@
+//Add action, action group into the role explorer
 pageextension 50181 "Role1" extends "Security Admin Role Center"
 {
 

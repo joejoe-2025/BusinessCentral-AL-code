@@ -1,8 +1,8 @@
-query 56663 "Top 5 Customer"
+query 56663 "Top Customer"
 {
-    Caption = 'Top 5 Customer';
+    Caption = 'Top Customer';
     QueryType = Normal;
-    TopNumberOfRows = 5;
+    TopNumberOfRows = 10;
     OrderBy = descending(SalesLCY);
     QueryCategory = 'Customer List';
 
