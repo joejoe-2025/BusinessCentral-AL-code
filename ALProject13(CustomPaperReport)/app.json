@@ -1,0 +1,39 @@
+{
+  "id": "c7d5a597-fa9b-42b7-876a-6446e56bebb8",
+  "name": "ALProject13(CustomPaperReport)",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+  {
+    "id": "0a77e10d-5994-4465-b863-dbc32139eb9e",
+    "name": "ALProject12（Sale&PurchaseProcess）",
+    "publisher": "Default Publisher",
+    "version": "1.0.0.0"
+  }
+],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "26.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 90149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
