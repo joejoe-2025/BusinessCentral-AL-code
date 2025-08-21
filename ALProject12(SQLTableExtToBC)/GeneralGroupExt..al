@@ -36,17 +36,7 @@ tableextension 51101 ItemExt extends Item
             OptionMembers = Unspecified,Active,Inactive;
         }
 
-        field(51107; "L Sell_UoM"; Code[10])
-        {
-            Caption = 'Sell Unit of Measure';
-            TableRelation = "Unit of Measure";
-        }
 
-        field(51108; "M Xfer_UoM"; Code[10])
-        {
-            Caption = 'Transfer UoM';
-            TableRelation = "Unit of Measure";
-        }
 
         field(51109; "N Xfer_UNITS"; Integer)
         {
