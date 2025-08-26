@@ -1,8 +1,5 @@
 codeunit 53130 "Sales Location RC Enforcer"
 {
-    // ─────────────────────────── 订阅：物料号验证后（不要拦太早） ───────────────────────────
-
-
     // ─────────────────────────── 订阅：地点变更时强校验（主入口） ───────────────────────────
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterValidateEvent', 'Location Code', true, true)]
     local procedure SL_OnAfterValidate_Location(var Rec: Record "Sales Line"; var xRec: Record "Sales Line"; CurrFieldNo: Integer)
