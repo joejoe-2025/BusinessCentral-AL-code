@@ -1,3 +1,4 @@
+//the first edition of the new cue page
 page 67775 "New Cue Page"
 {
     PageType = Card;
