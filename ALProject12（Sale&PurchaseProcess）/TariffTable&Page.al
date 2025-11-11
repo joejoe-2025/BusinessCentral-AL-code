@@ -1,4 +1,4 @@
-table 50160 "Tariff Duty Setup"
+table 50164 "Tariff Duty Setup"
 {
     Caption = 'Tariff Duty Setup';
     DataClassification = CustomerContent;
@@ -27,7 +27,7 @@ table 50160 "Tariff Duty Setup"
     }
 }
 
-page 50160 "Tariff Duty Setup"
+page 50165 "Tariff Duty Setup"
 {
     PageType = List;
     SourceTable = "Tariff Duty Setup";

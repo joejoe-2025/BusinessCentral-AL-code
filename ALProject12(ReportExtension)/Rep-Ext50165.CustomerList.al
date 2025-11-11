@@ -27,7 +27,7 @@ reportextension 50165 CustomerList extends "Customer - List"
         layout(Layout1)
         {
             Type = RDLC;
-            LayoutFile = 'CustomerList.rdlc';
+            LayoutFile = 'CustomerList11.rdlc';
         }
     }
     var
