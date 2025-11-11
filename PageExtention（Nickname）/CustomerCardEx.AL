@@ -9,6 +9,11 @@ pageextension 50600 CustomerCardEx extends Microsoft.Sales.Customer."Customer Ca
                 ApplicationArea = All;
                 Editable = true;
             }
+            field(Testfield; Rec.Testfield)
+            {
+                ApplicationArea = All;
+                Editable = true;
+            }
         }
     }
 }
