@@ -1,4 +1,4 @@
-page 50142 "Customer BA Company API"
+page 57142 "Customer BA Company API"
 {
     PageType = API;
     SourceTable = Customer;
@@ -18,7 +18,7 @@ page 50142 "Customer BA Company API"
             {
                 field(id; Rec."No.") { }
                 field(name; Rec.Name) { }
-                field("BACompanyNew"; Rec."BA Company New") { }
+                field("BACompany1"; Rec."BA Company1") { }
             }
         }
     }

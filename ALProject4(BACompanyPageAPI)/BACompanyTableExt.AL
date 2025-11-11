@@ -1,8 +1,8 @@
-tableextension 50197 CustomerTableExt extends Customer
+tableextension 57197 CustomerTableExt extends Customer
 {
     fields
     {
-        field(50100; "BA Company New"; Code[20])
+        field(57170; "BA Company1"; Code[20])
         {
             DataClassification = CustomerContent;
         }
