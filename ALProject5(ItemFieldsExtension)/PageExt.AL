@@ -1,4 +1,4 @@
-pageextension 50100 ItemCardExt_CustomFields extends "Item Card"
+pageextension 50109 ItemCardExt_CustomFields extends "Item Card"
 {
     layout
     {
