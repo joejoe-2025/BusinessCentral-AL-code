@@ -90,7 +90,7 @@ page 53120 "ItemFieldsFromSQLAPI"
             }
 
             // 🟫 税务
-            field(pstFlag; Rec."PST?")
+            field(pstFlag; Rec."PST")
             {
                 Caption = 'PST?';
             }
@@ -212,7 +212,7 @@ page 53120 "ItemFieldsFromSQLAPI"
             // 🟢 标识 & 编码
             field(upc; Rec."UPC1") { Caption = 'UPC'; }
             field(productId; Rec."Product ID") { Caption = 'Product ID'; }
-            field(aswo; Rec."ASWO#") { Caption = 'ASWO#'; }
+            field(aswo; Rec."ASWO") { Caption = 'ASWO#'; }
             field(cat; Rec."CAT") { Caption = 'CAT'; }
             field(subCat; Rec."SUB CAT") { Caption = 'SUB CAT'; }
             field(uniqueId; Rec."UNIQUE ID") { Caption = 'Unique ID'; }
@@ -231,8 +231,8 @@ page 53120 "ItemFieldsFromSQLAPI"
             field(addToUS4444; Rec."Add to US (4444)") { Caption = 'Add to US (4444)'; }
             field(addToPetSave; Rec."Add to PetSave") { Caption = 'Add to PetSave'; }
             field(newItemSheetRequired; Rec."NEW Item sheet required") { Caption = 'NEW Item sheet required'; }
-            field(webItem; Rec."WebItem?") { Caption = 'WebItem?'; }
-            field(fdaItem; Rec."FDA Item?") { Caption = 'FDA Item?'; }
+            field(webItem; Rec."WebItem") { Caption = 'WebItem?'; }
+            field(fdaItem; Rec."FDA Item") { Caption = 'FDA Item?'; }
 
             // 🟠 财务与分类信息
             field(commissionPct; Rec."Commission%") { Caption = 'Commission%'; }

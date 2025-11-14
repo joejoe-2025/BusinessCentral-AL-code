@@ -71,7 +71,7 @@ tableextension 53120 ItemCostPostingExt extends Item
 
 
         // 🟫 税务
-        field(53221; "PST?"; Option)
+        field(53221; "PST"; Option)
         {
             Caption = 'PST?';
             OptionMembers = " ",Y,N;
@@ -183,7 +183,7 @@ pageextension 53120 ItemCardCostPostingExt extends "Item Card"
                 group("🟫 Tax Flags")
                 {
                     Caption = '🟫 Tax Flags';
-                    field("PST?"; Rec."PST?") { ApplicationArea = All; }
+                    field("PST?"; Rec."PST") { ApplicationArea = All; }
                 }
 
                 group("🔵 Currency Rate")

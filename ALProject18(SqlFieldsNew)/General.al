@@ -93,7 +93,7 @@ tableextension 53100 ItemGeneralExt extends Item
             OptionMembers = " ",Y,N;
             DataClassification = ToBeClassified;
         }
-        field(53205; "ASWO#"; Text[40])
+        field(53205; "ASWO"; Text[40])
         {
             Caption = 'ASWO#';
             DataClassification = ToBeClassified;
@@ -104,13 +104,13 @@ tableextension 53100 ItemGeneralExt extends Item
             OptionMembers = " ",Y,N;
             DataClassification = ToBeClassified;
         }
-        field(53207; "WebItem?"; Option)
+        field(53207; "WebItem"; Option)
         {
             Caption = 'WebItem?';
             OptionMembers = " ",Y,N;
             DataClassification = ToBeClassified;
         }
-        field(53208; "FDA Item?"; Option)
+        field(53208; "FDA Item"; Option)
         {
             Caption = 'FDA Item?';
             OptionMembers = "Y","N"," ";
@@ -161,6 +161,8 @@ tableextension 53100 ItemGeneralExt extends Item
         }
 
 
+
+
     }
 }
 
@@ -184,6 +186,7 @@ pageextension 53100 ItemCardGeneralExt extends "Item Card"
             {
                 Caption = '🔵 Description & Derived';
 
+
                 field("Desc Length"; Rec."Desc Length") { ApplicationArea = All; }
                 field("First 30 chars."; Rec."First 30 chars.") { ApplicationArea = All; }
                 field("Next 10 chars."; Rec."Next 10 chars.") { ApplicationArea = All; }
@@ -195,7 +198,7 @@ pageextension 53100 ItemCardGeneralExt extends "Item Card"
                 Caption = '🟢 Identifiers & Codes';
                 field("Product ID"; Rec."Product ID") { ApplicationArea = All; }
                 field("UPC"; Rec."UPC1") { ApplicationArea = All; }
-                field("ASWO#"; Rec."ASWO#") { ApplicationArea = All; }
+                field("ASWO#"; Rec."ASWO") { ApplicationArea = All; }
                 field("CAT"; Rec."CAT") { ApplicationArea = All; }
                 field("SUB CAT"; Rec."SUB CAT") { ApplicationArea = All; }
                 field("UNIQUE ID"; Rec."UNIQUE ID") { ApplicationArea = All; }
@@ -222,8 +225,8 @@ pageextension 53100 ItemCardGeneralExt extends "Item Card"
                 field("Add to PetSave"; Rec."Add to PetSave") { ApplicationArea = All; }
                 field("NEW Item sheet required"; Rec."NEW Item sheet required") { ApplicationArea = All; }
                 field("in 998 Y/N"; Rec."in 998 Y/N") { ApplicationArea = All; }
-                field("WebItem"; Rec."WebItem?") { ApplicationArea = All; }
-                field("FDA Item?"; Rec."FDA Item?") { ApplicationArea = All; }
+                field("WebItem"; Rec."WebItem") { ApplicationArea = All; }
+                field("FDA Item?"; Rec."FDA Item") { ApplicationArea = All; }
             }
 
             // 🟠 财务与分类信息
